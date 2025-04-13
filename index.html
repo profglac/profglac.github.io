@@ -1,199 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gustavo Carvalho</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --green: #64ffda;
-      --white: #ffffff;
-      --grey: #e5e5e5;
-      --grey2: #A5ABBD;
-      --bg: #000000;
-    }
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gustavo Carvalho</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Calibre&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="particles-js"></div>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <header class="navbar">
+      <div class="logo">Gustavo Carvalho</div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Trabalhos</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
 
-    html, body {
-      height: 100%;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg);
-      color: var(--white);
-      overflow-x: hidden;
-    }
+    <section class="main-content">
+      <p class="intro">Olá! Eu sou</p>
+      <h1 class="name">Gustavo Carvalho</h1>
+      <h2 class="role">Engenheiro & Desenvolvedor Web</h2>
+      <p class="description">
+        Sou Engenheiro Mecânico, Engenheiro de Segurança, Engenheiro de Processamento de Gás Natural, Desenvolvedor Web e apaixonado por tecnologia.
+        <br />
+        <a class="linkedin" href="https://www.linkedin.com/in/gustavo-carvalho-b0b9a120/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
 
-    /* NAVBAR */
-    nav {
-      width: 100%;
-      padding: 30px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      background-color: var(--bg);
-      z-index: 100;
-    }
-
-    nav .logo {
-      font-size: 16px;
-      color: var(--grey2);
-      font-weight: 300;
-    }
-
-    nav .nav-links a {
-      margin-left: 30px;
-      text-decoration: none;
-      color: var(--grey2);
-      font-weight: 300;
-      font-size: 16px;
-      transition: color 0.3s ease;
-    }
-
-    nav .nav-links a:hover {
-      color: var(--green);
-    }
-
-    #particles-js {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    .content {
-      display: flex;
-      align-items: center;
-      height: 60vh;
-      padding: 0 100px;
-      margin-top: 200px; /* espaço para navbar */
-      margin-left: 75px;
-    }
-
-    .text-section {
-      max-width: 900px;
-    }
-
-    .intro {
-      font-family: 'Inter', sans-serif;
-      color: var(--green);
-      font-size: clamp(0.7rem, 1,0vw, 1.0rem); /* 16px a 21px aprox. */
-      font-weight: 200;
-      margin-bottom: 12px;
-    }
-    
-    .name {
-      font-family: 'Manrope', sans-serif;
-      font-size: clamp(3.0rem, 4.8vw, 4.8rem); /* 40px a 64px aprox. */
-      font-weight: 300;
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-
-    .title {
-      font-family: 'Manrope', sans-serif;
-      font-size: clamp(2.0rem, 2.5vw, 2.5rem); /* 24px a 35px aprox. */
-      font-weight: 300;
-      color: var(--grey);
-      margin-bottom: 24px;
-    }
-
-    .description {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(0.7rem, 1,0vw, 1.0rem); /* 16px a 21px aprox. */
-      font-weight: 300;
-      line-height: 1.6;
-      color: var(--grey2);
-      max-width: 600px;
-    }
-
-    .description a {
-      color: var(--green);
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      .name {
-        font-size: clamp(3.0rem, 4.5vw, 4.5rem); /* 40px a 64px aprox. */
-      }
-
-      .title {
-        font-size: clamp(2.0rem, 2.5vw, 2.5rem); /* 24px a 35px aprox. */
-      }
-
-      .description {
-        font-size: clamp(0.7rem, 0.9vw, 0.9rem); /* 16px a 21px aprox. */
-      }
-
-      nav {
-        padding: 16px 20px;
-      }
-
-      nav .nav-links a {
-        margin-left: 16px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Partículas -->
-  <div id="particles-js"></div>
-
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">Gustavo Carvalho</div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Trabalhos</a>
-      <a href="#">Contato</a>
-    </div>
-  </nav>
-
-  <!-- Conteúdo Principal -->
-  <div class="content">
-    <div class="text-section">
-      <div class="intro">Olá! Eu sou</div>
-      <div class="name">Gustavo Carvalho</div>
-      <div class="title">Engenheiro & Desenvolvedor Web</div>
-      <div class="description">
-        Sou Engenheiro Mecânico, Engenheiro de Segurança, Engenheiro de Processamento de Gás Natural, Desenvolvedor Web e apaixonado por tecnologia 
-        <a href="https://www.linkedin.com/in/gustavo-carvalho-b0b9a120/" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 80 },
-        size: { value: 3 },
-        color: { value: "#64ffda" },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#64ffda",
-          opacity: 0.4,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 2
-        }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "repulse" }
-        }
-      }
-    });
-  </script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.js carregado');
+      });
+    </script>
+  </body>
 </html>
+
