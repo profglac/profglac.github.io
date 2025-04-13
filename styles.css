@@ -4,7 +4,7 @@ body {
   padding: 0;
   background: url('https://azizstark.com/static/media/bg.064f0c49f195a85d50b1.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-color: #0a192f;
+  background-color: #000000;
   font-family: 'Manrope', sans-serif;
   color: #ffffff;
   overflow-x: hidden;
@@ -53,6 +53,8 @@ body {
   z-index: 2;
   padding: 100px 50px;
   max-width: 800px;
+  margin-top: 200px; /* espaço para navbar */
+  margin-left: 75px;
 }
 
 /* Estilo dos textos */
