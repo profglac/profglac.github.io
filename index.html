@@ -83,31 +83,31 @@
     .intro {
       font-family: 'Inter', sans-serif;
       color: var(--green);
-      font-size: 1vw;
+      font-size: clamp(1rem, 1.6vw, 1.3rem); /* 16px a 21px aprox. */
       font-weight: 200;
       margin-bottom: 10px;
     }
-
+    
     .name {
       font-family: 'Manrope', sans-serif;
-      font-size: 2vw;
-      font-weight: 400;
+      font-size: clamp(2.5rem, 5vw, 4rem); /* 40px a 64px aprox. */
+      font-weight: 300;
       color: var(--white);
       margin-bottom: 10px;
     }
 
     .title {
       font-family: 'Manrope', sans-serif;
-      font-size: 28px;
-      font-weight: 400;
+      font-size: clamp(1.5rem, 3vw, 2.2rem); /* 24px a 35px aprox. */
+      font-weight: 300;
       color: var(--grey);
       margin-bottom: 20px;
     }
 
     .description {
       font-family: 'Inter', sans-serif;
-      font-size: 16px;
-      font-weight: 200;
+      font-size: clamp(1rem, 1.6vw, 1.3rem); /* 16px a 21px aprox. */
+      font-weight: 300;
       line-height: 1.6;
       color: var(--grey2);
       max-width: 600px;
