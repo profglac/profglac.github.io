@@ -13,8 +13,8 @@ body {
 body::before {
   content: '';
   position: fixed;
-  top: 10;
-  right: 10; /* posiciona à direita */
+  top: 0;
+  right: 0; /* posiciona à direita */
   width: 60vw; /* reduz a largura da imagem */
   height: 100vh;
   background: url('background.png') no-repeat right center;
