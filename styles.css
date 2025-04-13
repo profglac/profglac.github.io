@@ -15,8 +15,8 @@ body::before {
   position: fixed;
   top: 50px;
   right: 40px; /* posiciona à direita */
-  width: 30vw; /* reduz a largura da imagem */
-  height: 60vh; /* reduz a altura da imagem */
+  width: 40vw; /* reduz a largura da imagem */
+  height: 70vh; /* reduz a altura da imagem */
   background: url('background.png') no-repeat right center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -25,8 +25,8 @@ body::before {
   pointer-events: none;
 
   /* Suaviza a borda da imagem com gradiente transparente */
-  mask-image: linear-gradient(to left, transparent 0%, black 15%, black 90%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to left, transparent 0%, black 15%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to left, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to left, transparent 0%, black 15%, black 85%, transparent 100%);
 }
 
 /* Partículas */
