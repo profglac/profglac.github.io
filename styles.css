@@ -14,13 +14,13 @@ body::before {
   content: '';
   position: fixed;
   top: 50px;
-  right: 400px; /* posiciona à direita */
+  right: 40px; /* posiciona à direita */
   width: 30vw; /* reduz a largura da imagem */
   height: 60vh; /* reduz a altura da imagem */
   background: url('background.png') no-repeat right center;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.6; /* suaviza a imagem */
+  opacity: 0.4; /* suaviza a imagem */
   z-index: 0;
   pointer-events: none;
 
