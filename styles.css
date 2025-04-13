@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('background.jpg') no-repeat center center fixed;
+  background: url('background.png') no-repeat center center fixed;
   background-size: cover;
   background-color: #000000;
   font-family: 'Manrope', sans-serif;
