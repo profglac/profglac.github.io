@@ -71,8 +71,8 @@
       display: flex;
       align-items: center;
       height: 60vh;
-      padding: 0 80px;
-      margin-top: 120px; /* espaço para navbar */
+      padding: 0 100px;
+      margin-top: 160px; /* espaço para navbar */
     }
 
     .text-section {
@@ -119,15 +119,15 @@
 
     @media (max-width: 768px) {
       .name {
-        font-size: 44px;
+        font-size: clamp(3.0rem, 4.5vw, 4.5rem); /* 40px a 64px aprox. */
       }
 
       .title {
-        font-size: 28px;
+        font-size: clamp(2.0rem, 2.5vw, 2.5rem); /* 24px a 35px aprox. */
       }
 
       .description {
-        font-size: 16px;
+        font-size: clamp(0.7rem, 0.9vw, 0.9rem); /* 16px a 21px aprox. */
       }
 
       nav {
