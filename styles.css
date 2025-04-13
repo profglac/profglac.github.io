@@ -20,13 +20,13 @@ body::before {
   background: url('background.png') no-repeat right center;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.08; /* suaviza a imagem */
+  opacity: 0.3; /* suaviza a imagem */
   z-index: 0;
   pointer-events: none;
 
   /* Suaviza a borda da imagem com gradiente transparente */
-  mask-image: linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to left, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to left, transparent 0%, black 15%, black 85%, transparent 100%);
 }
 
 /* Partículas */
