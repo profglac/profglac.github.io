@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 
-/* Partículas ocupando a tela toda */
+/* Partículas */
 #particles-js {
   position: fixed;
   top: 0;
@@ -21,8 +21,74 @@ body {
   z-index: 1;
 }
 
-/* Conteúdo da página por cima das partículas */
+/* Conteúdo */
 .main-content {
   position: relative;
   z-index: 2;
+  padding: 100px 50px;
+  max-width: 800px;
+}
+
+/* Barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+.nav-links a:hover {
+  color: #64ffda;
+}
+
+/* Estilo dos textos */
+.intro {
+  color: #64ffda;
+  font-family: 'Calibre', sans-serif;
+  font-size: clamp(14px, 1.2vw, 17px);
+  margin: 0 0 10px 0;
+}
+
+.name {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(40px, 5vw, 55px);
+  margin: 0;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.role {
+  font-size: clamp(24px, 3vw, 31px);
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: clamp(14px, 1.3vw, 17px);
+  line-height: 1.6;
+}
+
+.linkedin {
+  color: #64ffda;
+  text-decoration: none;
+  font-family: 'Calibre', sans-serif;
+}
+
+.linkedin:hover {
+  text-decoration: underline;
 }
